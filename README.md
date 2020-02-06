@@ -1,2 +1,0 @@
-# RocketElevatorsDigitalPresence
-Bootcamp Project

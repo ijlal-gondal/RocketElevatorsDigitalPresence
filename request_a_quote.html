@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+
+			<div class="container">
+				
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+							<li><b>Phone:</b> 1-800-565-2390</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html#home">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="index.html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a href="index.html#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+					
+	
+
+			<h1>Request a Quote</h1>
+			<form id="quote">
+				<div class="form-group">
+					<label for="buildingtype">Please select the type of buildng</label>
+					<select class="form-control-sm" id="buildingtype">
+							<option value="">--- Please Select ---</option>
+							<option value="1">Residential</option>
+							<option value="2">Commercial</option>
+							<option value="3">Corporate</option>
+							<option value="4">Hybrid</option>
+					</select> <br> <br>
+
+					<div class="form-group" id="residential">
+					<div class="form-group" id="numberofapartments">
+						<label for="numberofapartment">Please enter the number of the apartments:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofapartment">
+					  </div> 
+					  <div class="form-group" id="numberofloors"> 
+						<label for="numberoffloor">Please enter the number of the floors:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofloor">
+					  </div>
+					  <div class="form-group" id="numberofbasements">
+						<label for="numberofbasement">Please enter the number of the basements:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofbasement">
+					  </div>
+					</div>  
+					<div class="form-group" id="numberofoccupants">
+						<label for="numberofoccupant">Please enter the number of occupants per floor:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofoccupant">
+					  </div>
+					  <div class="form-group" id="numberofbusinesses"> 
+						<label for="numberofbusiness">Please enter the number of individual businesses:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofbusiness">
+					  </div>
+					  <div class="form-group" id="numberofparkingspaces">
+						<label for="numberofparkingspace">Please enter the number of parking spaces available:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofparkingspace">
+					  </div>
+					  <div class="form-group" id="numberofelevatorcages">
+						<label for="numberofelevatorcage">Please enter the number of elevator cages to be deployed:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberofelevatorcage">
+					  </div>
+					  <div class="form-group" id="numberoftenantcompanies">
+						<label for="numberoftenantcompany">Please enter the number of separate tenant companies:</label>
+						<input type="number" class="form-control-sm" min = "1" id="numberoftenantcompany">
+					  </div>
+					  <div class="form-group" id="numberofhours">
+						<label for="numberofhour">Please enter the number of hours of activity of the building: (max=24)</label>
+						<input type="number" class="form-control-sm" min = "1" max = "24" id="numberofhour">
+					  </div>
+					</div>
+					  <div class="col-sm">
+						
+					 
+			
+					  <form id="Elevator-form">
+						<label>
+							  Required number of Elevators:
+							<input type="number" id="numberofelevators" disabled>
+						</label>
+					</form>
+					<div id="productlineradio"> <strong>Please select one of our product line:</strong>
+					</div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="radio-btn"  value="standard">
+						<label class="form-check-label" for="standard">
+						 Standard
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="radio-btn"  value="premium">
+						<label class="form-check-label" for="premium">
+						  Premium
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="radio-btn"  value="excelium">
+						<label class="form-check-label" for="excelium">
+						  Excelium
+						</label>
+					  </div>
+					
+
+					<form id="Elevator-form">
+						<label>
+							  Unit cost of Elevator: $
+							<input type="number" id="unitcost" disabled>
+						</label>
+					</form>
+					<form id="Elevator-form">
+						<label>
+							  Installation Fee of Elevator: $
+							<input type="number" id="installationcost" disabled>
+						</label>
+					</form>
+					<p><input type="button" value="Calculate"></p>
+					  <form id="calculator-form">
+						<label>
+							Project's final cost: $
+							<input type="number" id="totalcost" disabled>
+						</label>
+						<button type="submit">Reset</button>
+						<div id="calculator-results"></div>
+					</form>
+
+				</div>
+				<div class="col-sm">
+
+
+					
+
+
+	
+			</form>
+		   <div id="result"></div>
+		</div>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			
+			<script>
+// '[name="buildingtype"]'
+
+			$(document).ready(function() {
+			$("#numberofapartments").hide();
+			$("#numberofloors").hide();
+			$("#numberofbasements").hide();
+			$("#numberofbusinesses").hide();
+			$("#numberofparkingspaces").hide();
+			$("#numberofelevatorcages").hide();
+			$("#numberoftenantcompanies").hide();
+			$("#numberofoccupants").hide();
+			$("#numberofhours").hide();
+
+
+
+			
+
+			$("#buildingtype").change(function() {
+				if ($("#buildingtype").val() === "1") {
+				$("#numberofapartments").show();
+				$("#numberofloors").show();
+				$("#numberofbasements").show();
+				$("#numberofbusinesses").hide();
+				$("#numberofparkingspaces").hide();
+				$("#numberofelevatorcages").hide();
+				$("#numberoftenantcompanies").hide();
+				$("#numberofoccupants").hide();
+				$("#numberofhours").hide();
+				} 
+				else if ($("#buildingtype").val() === "2") {
+				$("#numberofapartments").hide();
+				$("#numberofloors").show();
+				$("#numberofbasements").show();
+				$("#numberofbusinesses").show();
+				$("#numberofparkingspaces").show();
+				$("#numberofelevatorcages").show();
+				$("#numberoftenantcompanies").hide();
+				$("#numberofoccupants").hide();
+				$("#numberofhours").hide();
+				}
+				else if ($("#buildingtype").val() === "3") {
+				$("#numberofapartments").hide();
+				$("#numberofloors").show();
+				$("#numberofbasements").show();
+				$("#numberofbusinesses").hide();
+				$("#numberofparkingspaces").show();
+				$("#numberofelevatorcages").hide();
+				$("#numberoftenantcompanies").show();
+				$("#numberofoccupants").show();
+				$("#numberofhours").hide();
+				}
+				else if ($("#buildingtype").val() === "4") {
+				$("#numberofapartments").hide();
+				$("#numberofloors").show();
+				$("#numberofbasements").show();
+				$("#numberofbusinesses").show();
+				$("#numberofparkingspaces").show();
+				$("#numberofelevatorcages").hide();
+				$("#numberoftenantcompanies").hide();
+				$("#numberofoccupants").show();
+				$("#numberofhours").show();
+				}
+			})
+			});
+			$(document).ready(function() {
+			$('#numberofelevatorcage').change(function() {
+						$('#numberofelevators').val($(this).val());
+					});
+				});
+
+			
+			$(document).ready(function() {
+			$('#residential').change(function() {
+				var $numberofapartment = $("#numberofapartment").val();	
+				var $numberoffloor = $("#numberofloor").val();
+				var $avg = $numberofapartment / $numberoffloor;
+				var numofelevator = $avg/6;
+				 var column = Math.ceil($numberoffloor/20);
+				 numofelevator *= column;
+				$('#numberofelevators').val(Math.ceil(numofelevator));
+			});	
+				});
+				$(document).ready(function() {
+				$('#numberofoccupant').change(function() {
+				var $numberofoccupant= $("#numberofoccupant").val();
+				var $numberoffloor = $("#numberofloor").val();
+				var $numberofbasement = $("#numberofbasement").val();
+				var $totalfloor = parseInt($numberoffloor) + parseInt($numberofbasement);
+				var $avg = $numberofoccupant * $totalfloor;
+				var numofelevator = $avg / 1000;
+				var column = Math.ceil($totalfloor/20);
+				numofelevator = (Math.ceil(numofelevator/column))*column;
+				$('#numberofelevators').val(Math.ceil(numofelevator));
+			});
+	
+				});
+
+		
+			$(document).ready(function(){
+        	$("input[type='radio']").click(function(){
+			LineType = $("input[name='radio-btn']:checked").val();
+				// console.log('apart', LineType );
+			if (LineType === "standard" ){
+				var stdunitcost = 7565;
+				$("#unitcost").val(stdunitcost);
+				var stdinstallationcost = Math.round(0.10 * stdunitcost * $("#numberofelevators").val());
+				$("#installationcost").val(stdinstallationcost);
+
+				// console.log('apar', $("#unitcost").val());
+			}
+			else if (LineType === "premium") {
+				var prmunitcost = 12345;
+				$("#unitcost").val(prmunitcost);
+				var prminstallationcost = Math.round(0.13 * prmunitcost * $("#numberofelevators").val());
+				$("#installationcost").val(prminstallationcost);
+
+				// console.log('unit', $("#unitcost").val());
+			}
+			else if ($(LineType === "excelium")) {
+				var excunitcost = 15400;
+				$("#unitcost").val(excunitcost);
+				var excinstallationcost = Math.round(0.16 * excunitcost * $("#numberofelevators").val());
+				$("#installationcost").val(excinstallationcost);
+
+				// console.log('unitc', $("#unitcost").val());
+			}
+        });
+    });
+	
+		$("input[type='button']").click(function() {
+			//  console.log("tip", $("#unitcost").val());
+			// console.log("to", $("#numberofelevators").val());
+			// 	console.log("t", $("#installationcost").val())
+			finalunitcost = $("#unitcost").val();
+			finalnumberofelevators = $("#numberofelevators").val();
+			finalinstallationcost = $("#installationcost").val();
+
+			var totalcost = (parseInt(finalunitcost) * parseInt(finalnumberofelevators)) + parseInt(finalinstallationcost);
+				//  console.log("total", totalcost);
+			$("#totalcost").val(totalcost);
+
+			});
+
+
+
+
+
+			</script>			
+  </div>
+</div>
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat.
+							</p>
+							<h2> (418) 622-6644</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators Pvt. LTD.
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->            
