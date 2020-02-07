@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
+		<title>Rocket Elevators - Quote</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -50,10 +50,10 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation">
+	<!-- <body class="smoothscroll enable-animation"> -->
 
 		<!-- SLIDE TOP -->
-		<div id="slidetop">
+		<!-- <div id="slidetop">
 
 			<div class="container">
 				
@@ -62,8 +62,8 @@
 					<div class="col-md-4">
 						<h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
-					</div>
-
+					</div> -->
+<!-- 
 					<div class="col-md-4">
 						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
 						<ul class="list-unstyled">
@@ -73,9 +73,9 @@
 							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
 							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
 						</ul>
-					</div>
+					</div> -->
 
-					<div class="col-md-4">
+					<!-- <div class="col-md-4">
 						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
 						<ul class="list-unstyled">
 							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
@@ -84,13 +84,13 @@
 						</ul>
 					</div>
 
-				</div>
-
+				</div> -->
+<!-- 
 			</div>
 
-			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
-
-		</div>
+			<a class="slidetop-toggle" href="#">toggle button</a> -->
+<!-- 
+		</div> -->
 		<!-- /SLIDE TOP -->
 
 
@@ -135,7 +135,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
+						<a class="logo float-left scrollTo" href="index.html">
 							<img src="assets/images/R2.png" alt="" />
 						</a>
 
@@ -164,7 +164,23 @@
 										<a href="index.html#services">
 											SERVICES
 										</a>
-									</li>
+										<ul class="dropdown-menu">
+											<li class="dropdown"><!-- Residential Services -->
+												<a class="dropdown-toggle" href="residential.html">
+													Residential Services
+												</a>
+											</li>
+											<li class="dropdown"><!-- Corporate Services -->
+												<a class="dropdown-toggle" href="commercial.html">
+													Corporate Services
+												</a>
+											</li>
+											<li class="dropdown"><!-- Quote Form -->
+												<a class="dropdown-toggle" href="request_a_quote.html">
+													Quote Form
+												</a>
+											</li>
+										</ul>
 									<li><!-- PORTFOLIO -->
 										<a href="index.html#portfolio">
 											PORTFOLIO
@@ -201,7 +217,7 @@
 	
 
 			<h1>Request a Quote</h1>
-			<form id="quote">
+			<form id="quote" >
 				<div class="form-group">
 					<label for="buildingtype">Please select the type of buildng</label>
 					<select class="form-control-sm" id="buildingtype">
@@ -215,40 +231,40 @@
 					<div class="form-group" id="residential">
 					<div class="form-group" id="numberofapartments">
 						<label for="numberofapartment">Please enter the number of the apartments:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofapartment">
+						<input type="number" class="form-control-sm" min = "0" id="numberofapartment">
 					  </div> 
 					  <div class="form-group" id="numberofloors"> 
 						<label for="numberoffloor">Please enter the number of the floors:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofloor">
+						<input type="number" class="form-control-sm" min = "0" id="numberofloor">
 					  </div>
 					  <div class="form-group" id="numberofbasements">
 						<label for="numberofbasement">Please enter the number of the basements:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofbasement">
+						<input type="number" class="form-control-sm" min = "0" id="numberofbasement">
 					  </div>
 					</div>  
 					<div class="form-group" id="numberofoccupants">
 						<label for="numberofoccupant">Please enter the number of occupants per floor:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofoccupant">
+						<input type="number" class="form-control-sm" min = "0" id="numberofoccupant">
 					  </div>
 					  <div class="form-group" id="numberofbusinesses"> 
 						<label for="numberofbusiness">Please enter the number of individual businesses:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofbusiness">
+						<input type="number" class="form-control-sm" min = "0" id="numberofbusiness">
 					  </div>
 					  <div class="form-group" id="numberofparkingspaces">
 						<label for="numberofparkingspace">Please enter the number of parking spaces available:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofparkingspace">
+						<input type="number" class="form-control-sm" min = "0" id="numberofparkingspace">
 					  </div>
 					  <div class="form-group" id="numberofelevatorcages">
 						<label for="numberofelevatorcage">Please enter the number of elevator cages to be deployed:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberofelevatorcage">
+						<input type="number" class="form-control-sm" min = "0" id="numberofelevatorcage">
 					  </div>
 					  <div class="form-group" id="numberoftenantcompanies">
 						<label for="numberoftenantcompany">Please enter the number of separate tenant companies:</label>
-						<input type="number" class="form-control-sm" min = "1" id="numberoftenantcompany">
+						<input type="number" class="form-control-sm" min = "0" id="numberoftenantcompany">
 					  </div>
 					  <div class="form-group" id="numberofhours">
 						<label for="numberofhour">Please enter the number of hours of activity of the building: (max=24)</label>
-						<input type="number" class="form-control-sm" min = "1" max = "24" id="numberofhour">
+						<input type="number" class="form-control-sm" min = "0" max = "24" id="numberofhour">
 					  </div>
 					</div>
 					  <div class="col-sm">
@@ -301,9 +317,11 @@
 							Project's final cost: $
 							<input type="number" id="totalcost" disabled>
 						</label>
+					</form>	
+					<p> Please press the reset button to evaluate a new project.</p>
 						<button type="submit">Reset</button>
 						<div id="calculator-results"></div>
-					</form>
+					
 
 				</div>
 				<div class="col-sm">
@@ -421,28 +439,28 @@
 		
 			$(document).ready(function(){
         	$("input[type='radio']").click(function(){
-			LineType = $("input[name='radio-btn']:checked").val();
-				// console.log('apart', LineType );
-			if (LineType === "standard" ){
+			ProductLine = $("input[name='radio-btn']:checked").val();
+				// console.log('apart', ProductLine );
+			if (ProductLine === "standard" ){
 				var stdunitcost = 7565;
 				$("#unitcost").val(stdunitcost);
-				var stdinstallationcost = Math.round(0.10 * stdunitcost * $("#numberofelevators").val());
+				var stdinstallationcost = (0.10 * stdunitcost * $("#numberofelevators").val()).toFixed(2);
 				$("#installationcost").val(stdinstallationcost);
 
 				// console.log('apar', $("#unitcost").val());
 			}
-			else if (LineType === "premium") {
+			else if (ProductLine === "premium") {
 				var prmunitcost = 12345;
 				$("#unitcost").val(prmunitcost);
-				var prminstallationcost = Math.round(0.13 * prmunitcost * $("#numberofelevators").val());
+				var prminstallationcost = (0.13 * prmunitcost * $("#numberofelevators").val()).toFixed(2);
 				$("#installationcost").val(prminstallationcost);
 
 				// console.log('unit', $("#unitcost").val());
 			}
-			else if ($(LineType === "excelium")) {
+			else if ($(ProductLine === "excelium")) {
 				var excunitcost = 15400;
 				$("#unitcost").val(excunitcost);
-				var excinstallationcost = Math.round(0.16 * excunitcost * $("#numberofelevators").val());
+				var excinstallationcost = (0.16 * excunitcost * $("#numberofelevators").val()).toFixed(2);
 				$("#installationcost").val(excinstallationcost);
 
 				// console.log('unitc', $("#unitcost").val());
@@ -471,63 +489,64 @@
 			</script>			
   </div>
 </div>
-			<!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
+		</div>
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
 
 
-					<div class="row">
+			<div class="row">
 
-						<!-- col #1 -->
-						<div class="col-md-8">
+				<!-- col #1 -->
+				<div class="col-md-8">
 
-							<h3 class="letter-spacing-1">WHY US?</h3>
+					<h3 class="letter-spacing-1">WHY US?</h3>
 
-							<!-- Small Description -->
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat.
-							</p>
-							<h2> (418) 622-6644</h2>
+					<!-- Small Description -->
+					<p>
+						To speak with someone regarding an equipment service or dispatching request 24 hours a day, 7 days a week, 365 days a year, please call.
+					</p>
+					<h2> (418) 622-6644</h2>
+				</div>
+				<!-- /col #1 -->
+
+				<!-- col #2 -->
+				<div class="col-md-4">
+					<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+					<!-- Newsletter Form -->
+					<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+					<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+							<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-success" type="submit">Subscribe</button>
+							</span>
 						</div>
-						<!-- /col #1 -->
-
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
-
-					</div>
+					</form>
+					<!-- /Newsletter Form -->
 
 
 				</div>
+				<!-- /col #2 -->
 
-				<div class="copyright">
-					<div class="container">
-						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						&copy; All Rights Reserved, Rocket Elevators Pvt. LTD.
-					</div>
-				</div>
+			</div>
 
-			</footer>
-			<!-- /FOOTER -->            
+
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<ul class="float-right m-0 list-inline mobile-block">
+					<li><a href="#">Terms &amp; Conditions</a></li>
+					<li>&bull;</li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+				&copy; All Rights Reserved, Rocket Elevators Pvt. LTD.
+			</div>
+		</div>
+
+	</footer>
+	<!-- /FOOTER -->            
