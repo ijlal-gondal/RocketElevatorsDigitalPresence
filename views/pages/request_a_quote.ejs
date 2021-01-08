@@ -3,30 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Rocket Elevators - Quote</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
-
-		<!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
-
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-		<!-- REVOLUTION SLIDER -->
-		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
-
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<% include('../partials/header') %>
 	</head>
 
 	<!--
@@ -492,61 +469,6 @@
 		</div>
 	<!-- FOOTER -->
 	<footer id="footer">
-		<div class="container">
-
-
-			<div class="row">
-
-				<!-- col #1 -->
-				<div class="col-md-8">
-
-					<h3 class="letter-spacing-1">WHY US?</h3>
-
-					<!-- Small Description -->
-					<p>
-						To speak with someone regarding an equipment service or dispatching request 24 hours a day, 7 days a week, 365 days a year, please call.
-					</p>
-					<h2> (418) 622-6644</h2>
-				</div>
-				<!-- /col #1 -->
-
-				<!-- col #2 -->
-				<div class="col-md-4">
-					<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-					<!-- Newsletter Form -->
-					<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-					<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-							<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-							<span class="input-group-btn">
-								<button class="btn btn-success" type="submit">Subscribe</button>
-							</span>
-						</div>
-					</form>
-					<!-- /Newsletter Form -->
-
-
-				</div>
-				<!-- /col #2 -->
-
-			</div>
-
-
-		</div>
-
-		<div class="copyright">
-			<div class="container">
-				<ul class="float-right m-0 list-inline mobile-block">
-					<li><a href="#">Terms &amp; Conditions</a></li>
-					<li>&bull;</li>
-					<li><a href="#">Privacy</a></li>
-				</ul>
-				&copy; All Rights Reserved, Rocket Elevators Pvt. LTD.
-			</div>
-		</div>
-
+		<% include('../partials/footer') %>
 	</footer>
 	<!-- /FOOTER -->            
