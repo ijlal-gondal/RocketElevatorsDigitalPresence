@@ -1,30 +1,94 @@
 <!-- <header> -->
+    <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
-    <meta name="description" content="" />
-    <meta name="Author" content="Ijlal Gondal [www.ijlal.ga]" />
+        <!-- TOP NAV -->
+        <header id="topNav">
+            <div class="container">
 
-    <!-- mobile settings -->
-    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+                <!-- Mobile Menu Button -->
+                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
 
-    <!-- WEB FONTS : use %7C instead of | (pipe) -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css" />
+                <!-- Logo -->
+                <a class="logo float-left scrollTo" href="/">
+                    <img src="assets/images/R2.png" alt="" />
+                </a>
 
-    <!-- CORE CSS -->
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+                <!-- 
+                    Top Nav 
+                    
+                    AVAILABLE CLASSES:
+                    submenu-dark = dark sub menu
+                -->
+                <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                    <nav class="nav-main">
 
-    <!-- REVOLUTION SLIDER -->
-    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+                        <!-- 
+                            .nav-onepage
+                            Required for onepage navigation links
+                            
+                            Add .external for an external link!
+                        -->
+                        <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                            <li class="active"><!-- HOME -->
+                                <a href="/">
+                                    HOME
+                                </a>
+                            </li>
+                            <li><!-- SERVICES -->
+                                <a href="#services">
+                                    SERVICES
+                                </a>
 
-    <!-- THEME CSS -->
-    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+                                 <ul class="dropdown-menu">
+                                        <li class="dropdown"><!-- Residential Services -->
+                                            <a class="dropdown-toggle" href="residential.html">
+                                                Residential Services
+                                            </a>
+                                        </li>
+                                        <li class="dropdown"><!-- Corporate Services -->
+                                            <a class="dropdown-toggle" href="commercial.html">
+                                                Corporate Services
+                                            </a>
+                                        </li>
+                                        <li class="dropdown"><!-- Quote Form -->
+                                            <a class="dropdown-toggle" href="request_a_quote.html">
+                                                Quote Form
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </li>
 
-    <!-- PAGE LEVEL SCRIPTS -->
-    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/color_scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+                            <li><!-- PORTFOLIO -->
+                                <a href="/#portfolio">
+                                    PORTFOLIO
+                                </a>
+                            </li>
+                            <li><!-- NEWS -->
+                                <a href="/#news">
+                                    NEWS
+                                </a>
+                            <li><!-- CLIENTS -->
+                                <a href="/#clients">
+                                    CLIENTS
+                                </a>
+                            </li>
+                            <li><!-- CONTACT -->
+                                <a href="/#contact">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
 
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <!-- /Top Nav -->
+
+    </div>
 
 
 
